@@ -29,7 +29,7 @@
 </head>
 <body>
     <div class="header-shop">
-        <form class="group-search-shop">
+        <form action="#timkiem" class="group-search-shop" method="post">
             <input class="search-shop" type="text" placeholder="Search...">
             <button type="submit" class="btn-search-shop">Search</button>
         </form>
@@ -37,7 +37,7 @@
         <button class="btn-cart-shop">Cart</button>  
     </div>
     <nav class="nav-shop">
-        <span onclick="handleButtonNav()">
+        <span onclick="handleButtonMenuMobile()">
             <i class="fa-solid fa-bars"></i>
         </span>
         <div class="menu">
@@ -47,14 +47,11 @@
             <a href="#">Contact</a>
         </div>
     </nav>
-    <div class="menuNavMobile">
-        <div id="menuBar" class="menuMobile">
-            <button id="close" onclick="handleCloseNav()">close</button>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">News</a>
-            <a href="#">Contact</a>
-    </div>
+    <div id="menuBar" class="menuMobile">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
     </div>
     <div class="panel-shop">
         <div class="card-item-shop">

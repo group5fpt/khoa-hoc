@@ -16,10 +16,10 @@
     background-color: #879a1b;
 }
 .nav-shop span{
-    visibility: hidden;
+    display: none;
 }
 
-.menuNavMobile{
+/* .menuNavMobile{
     z-index: 1;
     left: 0;
     top: 0;
@@ -28,20 +28,34 @@
     position: fixed;
     background-color: rgba(0, 0, 0, .3);
 }
+*/
 .menuMobile{
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 100%;
+    display: none;
+    z-index: 1;
     position: absolute;
+    background-color: wheat;
+    min-width: 160px;
+    overflow: auto;
+}
+.menuMobile a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.show{
+    display: block;
 }
 
 @media only screen and (max-width: 500px) {
     .nav-shop span{
-        visibility: visible;
+        display: block;
     }
 
     .nav-shop .menu{
-        visibility: hidden;
+        display: none;
     }
 }
