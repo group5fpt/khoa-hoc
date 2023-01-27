@@ -1,0 +1,47 @@
+.nav-shop{
+    display: flex;
+    background-color: #9db41e;
+    padding: 9px 16px;
+}
+
+.nav-shop .menu a{
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.nav-shop .menu a:hover{
+    color: white;
+    background-color: #879a1b;
+}
+.nav-shop span{
+    visibility: hidden;
+}
+
+.menuNavMobile{
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .3);
+}
+.menuMobile{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100%;
+    position: absolute;
+}
+
+@media only screen and (max-width: 500px) {
+    .nav-shop span{
+        visibility: visible;
+    }
+
+    .nav-shop .menu{
+        visibility: hidden;
+    }
+}

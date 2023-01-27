@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html/ css basic</title>
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!--Style CSS-->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="footer.css">
+    
+    <style>
+        body, html{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-shop">
+        <form class="group-search-shop">
+            <input class="search-shop" type="text" placeholder="Search...">
+            <button type="submit" class="btn-search-shop">Search</button>
+        </form>
+        <a href="#">Order history</a>
+        <button class="btn-cart-shop">Cart</button>  
+    </div>
+    <nav class="nav-shop">
+        <span onclick="handleButtonNav()">
+            <i class="fa-solid fa-bars"></i>
+        </span>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <div class="menuNavMobile">
+        <div id="menuBar" class="menuMobile">
+            <button id="close" onclick="handleCloseNav()">close</button>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+    </div>
+    </div>
+    <div class="panel-shop">
+        <div class="card-item-shop">
+            <a href="#linkItem" class="card-item-image">
+                <img class="image-product" src="./image/Capture.PNG" alt="">
+            </a>
+            <div class="card-body-shop">
+                <p class="tooltip-text-item" data-tooltip="noi dung san pham noi dung san pham:3">
+                    <span class="tooltip-item-shop">
+                        noi dung san pham
+                    </span>
+                </p>
+                <span class="price-item-shop">$500</span> 
+             </div>
+            <button class="btn-cart">Add cart</button>
+        </div>
+    </div>
+    <footer>
+        <p>Corporation@2022 FPTSOFTWARE</p>
+    </footer>
+    <script src="./nav.js"></script>
+</body>
+</html>

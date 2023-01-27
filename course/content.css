@@ -1,0 +1,74 @@
+.panel-shop{
+    display: flex;
+    flex-flow: row wrap; /*row là từ trái sang và wrap sẽ tự ngắt xuống tính từ trên xuống*/
+    margin: 10px;
+}
+
+.card-item-shop{
+    border: 1px solid gainsboro;
+    padding: 20px;
+    margin: 10px 10px 0 0;
+    width: 230px;
+}
+
+.card-item-shop:hover{
+    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.2);
+    transition: 500ms
+}
+
+.card-body-shop{
+    text-align: center;
+}
+.card-body-shop p{
+    margin: 0;
+}
+
+.card-body-shop .price-item-shop{
+    color: rgb(242, 94, 94);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.image-product{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.btn-cart{
+    border-radius: 4px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: rgb(25, 174, 174);
+}
+
+.btn-cart:hover{
+    background-color: rgb(29, 148, 148);
+    cursor: pointer;
+    transition: 500ms;
+}
+
+p[data-tooltip]{
+    position: relative;
+}
+
+.tooltip-text-item::after{
+    position: absolute;
+    content: attr(data-tooltip);
+    visibility: hidden;
+    z-index: 1;
+    background-color: #000c;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+}
+
+.tooltip-text-item:hover::after{
+    visibility: visible;
+}
+

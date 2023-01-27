@@ -1,0 +1,55 @@
+.header-shop{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.search-shop{
+    padding: 10px;
+    border: none;
+}
+
+.group-search-shop{
+    display: flex;
+    border: 1px solid rgb(160, 163, 166);
+    border-radius: 4px;
+}
+
+.btn-search-shop{
+    border: none;
+}
+
+.btn-search-shop:hover{
+    background-color: rgb(188, 192, 195);
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.header-shop a{
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    margin: 0 21px;
+    border: 1px solid rgb(188, 192, 195);
+    border-radius: 4px;
+    padding: 8px 10px 0 10px;
+}
+
+.btn-cart-shop{
+    border: none;
+    background-color: rgb(25, 174, 174);
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+}
+
+.btn-cart-shop:hover{
+    cursor: pointer;
+    background-color: rgb(31, 155, 155);
+    transition: 500ms;
+}
+
+
+
+
+
